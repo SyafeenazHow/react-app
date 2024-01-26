@@ -1,30 +1,41 @@
 import React, { useEffect } from 'react';
 
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/bundle';
+
+// import styles bundle
+import 'swiper/css/bundle';
+
+
 const SwiperComponent = () => {
-    useEffect(() => {
-        // Ensure Swiper is available globally
-        if (typeof window !== 'undefined' && window.Swiper) {
-          // Initialize Swiper
-          const swiper = new window.Swiper('.swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-          });
-        }
-      }, []);
-      
+  useEffect(() => {
+    const mySwiper = new Swiper('.swiper-container', {
+      // Swiper options here...
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    return () => {
+      // Clean up Swiper instance on unmount
+      mySwiper.destroy();
+    };
+  }, []); // Empty dependency array ensures useEffect runs only once
 
   return (
     <div className="swiper-container">
+      {/* Additional required wrapper */}
       <div className="swiper-wrapper">
+        {/* Slides */}
         <div className="swiper-slide">Slide 1</div>
         <div className="swiper-slide">Slide 2</div>
         <div className="swiper-slide">Slide 3</div>
-        {/* Add more slides as needed */}
+        {/* ... */}
       </div>
+      {/* If we need navigation */}
       <div className="swiper-button-next"></div>
       <div className="swiper-button-prev"></div>
     </div>
