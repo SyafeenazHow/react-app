@@ -1,0 +1,66 @@
+/*!
+
+ =========================================================
+ * Material Kit - v2.0.7
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/material-kit
+ * Copyright 2020 Creative Tim (http://www.creative-tim.com)
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+
+ @import "partials/kit/core/variables";
+ @import "partials/kit/core/mixins";
+ @import "partials/kit/core/core-bootstrap";
+ @import "partials/kit/core/reboot";
+
+ // Core Components
+ @import "partials/kit/core/layout";
+ @import "partials/kit/core/buttons";
+ @import "partials/kit/core/misc";
+ @import "partials/kit/core/checkboxes";
+ @import "partials/kit/core/custom-forms";
+ @import "partials/kit/core/switches";
+ @import "partials/kit/core/radios";
+ @import "partials/kit/core/carousel";
+ @import "partials/kit/core/forms";
+ @import "partials/kit/core/input-group";
+ @import "partials/kit/core/list-group";
+ @import "partials/kit/core/nav";
+ @import "partials/kit/core/images";
+ @import "partials/kit/core/navbar";
+ @import "partials/kit/core/badges";
+ @import "partials/kit/core/alerts";
+ @import "partials/kit/core/pagination";
+ @import "partials/kit/core/pills";
+ @import "partials/kit/core/info-areas";
+ @import "partials/kit/core/type";
+ @import "partials/kit/core/tabs";
+ @import "partials/kit/core/tooltip";
+ @import "partials/kit/core/popover";
+ @import "partials/kit/core/modal";
+ @import "partials/kit/core/dropdown";
+ @import "partials/kit/core/drawer";
+ @import "partials/kit/core/progress";
+ @import "partials/kit/core/togglebutton";
+ @import "partials/kit/core/ripples";
+ @import "partials/kit/core/headers";
+ @import "partials/kit/core/footers";
+
+ // Cards
+ @import 'partials/kit/core/cards';
+ @import 'partials/kit/core/cards/card-carousel';
+ @import 'partials/kit/core/cards/card-login';
+ @import 'partials/kit/core/cards/card-plain';
+
+ // Core Plugins
+ @import 'partials/kit/core/plugins/plugin-datetime-picker';
+ @import 'partials/kit/core/plugins/plugin-nouislider';
+
+ // Sections and Example pages
+ @import "partials/kit/core/example-pages";
+ @import "partials/kit/core/responsive";
